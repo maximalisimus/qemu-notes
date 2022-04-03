@@ -1,0 +1,18 @@
+
+qemu-img create -f qcow2 -b centos-cleaninstall.img snapshot.img
+
+qemu-img info snapshot.img
+
+
+Temporary snapshots
+QEMU also supports temporary snapshots, where the user does not have to explicitly create a separate .img file. With the -snapshot flag, any changes made to the virtual machine while it is running are written to temporary files and thrown away when the virtual machine is turned off. No changes are saved to the original .img file.
+
+Временные моментальные снимки
+QEMU также поддерживает временные моментальные снимки, когда пользователю не нужно явно создавать отдельный файл .img. С флагом-snapshot любые изменения, внесенные в виртуальную машину во время ее работы, записываются во временные файлы и удаляются при выключении виртуальной машины. В исходном файле .img не сохраняются никакие изменения.
+
+qemu -hda centos-cleaninstall.img -snapshot
+
+
+
+
+
