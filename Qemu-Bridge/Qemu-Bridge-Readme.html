@@ -1,0 +1,2883 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="Qemu-Bridge-Readme.files/filelist.xml">
+<link rel=Edit-Time-Data href="Qemu-Bridge-Readme.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>utv</o:Author>
+  <o:LastAuthor>utv</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:LastPrinted>2022-02-21T09:13:00Z</o:LastPrinted>
+  <o:Created>2022-02-21T09:14:00Z</o:Created>
+  <o:LastSaved>2022-02-21T09:14:00Z</o:LastSaved>
+  <o:Pages>9</o:Pages>
+  <o:Words>1125</o:Words>
+  <o:Characters>6413</o:Characters>
+  <o:Lines>53</o:Lines>
+  <o:Paragraphs>15</o:Paragraphs>
+  <o:CharactersWithSpaces>7523</o:CharactersWithSpaces>
+  <o:Version>15.00</o:Version>
+ </o:DocumentProperties>
+ <o:CustomDocumentProperties>
+  <o:AppVersion dt:dt="string">15.0000</o:AppVersion>
+ </o:CustomDocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="Qemu-Bridge-Readme.files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="Qemu-Bridge-Readme.files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:DisplayBackgroundShape/>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:DefaultTableStyle Number="0">Обычный</w:DefaultTableStyle>
+  <w:DrawingGridHorizontalSpacing>0 пт</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>0 пт</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>RU</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:DrawingGridHorizontalOrigin>0 пт</w:DrawingGridHorizontalOrigin>
+  <w:DrawingGridVerticalOrigin>0 пт</w:DrawingGridVerticalOrigin>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="371">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:32771 0 0 0 1 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1107305727 0 0 415 0;}
+@font-face
+	{font-family:"Liberation Serif";
+	panose-1:2 2 6 3 5 4 5 2 3 4;
+	mso-font-charset:204;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536868097 1342208255 33 0 447 0;}
+@font-face
+	{font-family:"Times Newer Roman";
+	mso-font-alt:"Times New Roman";
+	mso-font-charset:1;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"PT Serif";
+	panose-1:2 10 6 3 4 5 5 2 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611985 1342185547 32 0 151 0;}
+@font-face
+	{font-family:Menlo;
+	mso-font-alt:"Courier New";
+	mso-font-charset:1;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:apple-system;
+	mso-font-alt:"Times New Roman";
+	mso-font-charset:1;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"AR PL New Sung";
+	mso-font-charset:1;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"DejaVu Sans";
+	panose-1:2 11 6 3 3 8 4 2 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-419418369 -771686913 170156073 0 511 0;}
+@font-face
+	{font-family:"Liberation Mono";
+	panose-1:2 7 4 9 2 2 5 2 4 4;
+	mso-font-charset:204;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-536868097 1073772799 1 0 447 0;}
+@font-face
+	{font-family:"Liberation Sans";
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536868097 1342208255 33 0 447 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Liberation Serif","serif";
+	mso-fareast-font-family:"AR PL New Sung";
+	mso-bidi-font-family:"DejaVu Sans";
+	mso-font-kerning:1.0pt;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:Заголовок;
+	mso-style-next:"Основной текст";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	mso-hyphenate:none;
+	font-size:24.0pt;
+	font-family:"Liberation Serif","serif";
+	mso-fareast-font-family:"AR PL New Sung";
+	mso-bidi-font-family:"DejaVu Sans";
+	mso-font-kerning:1.0pt;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+h2
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Заголовок 2 Знак";
+	mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-hyphenate:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:12.5pt;
+	font-family:"Calibri Light","sans-serif";
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:Mangal;
+	mso-font-kerning:1.0pt;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;
+	font-style:italic;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:Заголовок;
+	mso-style-next:"Основной текст";
+	margin-top:7.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	mso-hyphenate:none;
+	font-size:14.0pt;
+	font-family:"Liberation Serif","serif";
+	mso-fareast-font-family:"AR PL New Sung";
+	mso-bidi-font-family:"DejaVu Sans";
+	mso-font-kerning:1.0pt;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan no-line-numbers;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Liberation Serif","serif";
+	mso-fareast-font-family:"AR PL New Sung";
+	mso-bidi-font-family:"DejaVu Sans";
+	mso-font-kerning:1.0pt;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;
+	font-style:italic;}
+p.MsoList, li.MsoList, div.MsoList
+	{mso-style-unhide:no;
+	mso-style-parent:"Основной текст";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:7.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Liberation Serif","serif";
+	mso-fareast-font-family:"AR PL New Sung";
+	mso-bidi-font-family:"DejaVu Sans";
+	mso-font-kerning:1.0pt;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:7.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Liberation Serif","serif";
+	mso-fareast-font-family:"AR PL New Sung";
+	mso-bidi-font-family:"DejaVu Sans";
+	mso-font-kerning:1.0pt;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+span.a
+	{mso-style-name:"Исходный текст";
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Liberation Mono";
+	mso-ascii-font-family:"Liberation Mono";
+	mso-fareast-font-family:"Liberation Mono";
+	mso-hansi-font-family:"Liberation Mono";
+	mso-bidi-font-family:"Liberation Mono";}
+p.a0, li.a0, div.a0
+	{mso-style-name:Заголовок;
+	mso-style-unhide:no;
+	mso-style-next:"Основной текст";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-hyphenate:none;
+	font-size:14.0pt;
+	font-family:"Liberation Sans","sans-serif";
+	mso-fareast-font-family:"AR PL New Sung";
+	mso-bidi-font-family:"DejaVu Sans";
+	mso-font-kerning:1.0pt;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+p.1, li.1, div.1
+	{mso-style-name:Указатель1;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan no-line-numbers;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Liberation Serif","serif";
+	mso-fareast-font-family:"AR PL New Sung";
+	mso-bidi-font-family:"DejaVu Sans";
+	mso-font-kerning:1.0pt;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+p.a1, li.a1, div.a1
+	{mso-style-name:"Текст в заданном формате";
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:10.0pt;
+	font-family:"Liberation Mono";
+	mso-fareast-font-family:"Liberation Mono";
+	mso-font-kerning:1.0pt;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+p.a2, li.a2, div.a2
+	{mso-style-name:"Содержимое врезки";
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Liberation Serif","serif";
+	mso-fareast-font-family:"AR PL New Sung";
+	mso-bidi-font-family:"DejaVu Sans";
+	mso-font-kerning:1.0pt;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+span.2
+	{mso-style-name:"Заголовок 2 Знак";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Заголовок 2";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:12.5pt;
+	font-family:"Calibri Light","sans-serif";
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:Mangal;
+	mso-font-kerning:1.0pt;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;
+	font-weight:bold;
+	font-style:italic;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:2.0cm 2.0cm 2.0cm 2.0cm;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Обычная таблица";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1038"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=RU style='tab-interval:35.45pt;line-break:strict'>
+
+<div class=WordSection1>
+
+<h1><span style='font-size:28.5pt;mso-bidi-font-size:12.0pt;font-family:"Times Newer Roman","serif"'>Сетевой
+мост для QEMU в <span class=SpellE>Linux</span>.</span><!--[if gte vml 1]><v:rect
+ id="setevoy-most-dlya-qemu-v-linux" o:spid="_x0000_s1037" style='position:absolute;
+ margin-left:-19.5pt;margin-top:15pt;width:19.5pt;height:19.5pt;z-index:251652096;
+ visibility:visible;mso-wrap-style:none;mso-width-percent:0;
+ mso-height-percent:0;mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;
+ mso-wrap-distance-right:9pt;mso-wrap-distance-bottom:0;
+ mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+ mso-position-vertical:absolute;mso-position-vertical-relative:text;
+ mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+ mso-height-relative:page;v-text-anchor:middle' o:gfxdata="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
+" stroked="f" strokecolor="#3465a4">
+ <v:fill opacity="0"/>
+ <v:stroke joinstyle="round"/>
+</v:rect><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:251652096;margin-left:-26px;margin-top:20px;width:26px;
+height:26px'><img width=26 height=26 src="Qemu-Bridge-Readme.files/image001.png"
+v:shapes="setevoy-most-dlya-qemu-v-linux"></span><![endif]><!--[if gte vml 1]><v:rect
+ id="chast-1-sozdanie-konfiguratsionnykh-faylov" o:spid="_x0000_s1036" style='position:absolute;
+ margin-left:-19.5pt;margin-top:12pt;width:19.5pt;height:19.5pt;z-index:251654144;
+ visibility:visible;mso-wrap-style:none;mso-width-percent:0;
+ mso-height-percent:0;mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;
+ mso-wrap-distance-right:9pt;mso-wrap-distance-bottom:0;
+ mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+ mso-position-vertical:absolute;mso-position-vertical-relative:text;
+ mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+ mso-height-relative:page;v-text-anchor:middle' o:gfxdata="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
+" stroked="f" strokecolor="#3465a4">
+ <v:fill opacity="0"/>
+ <v:stroke joinstyle="round"/>
+</v:rect><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:251654144;margin-left:-26px;margin-top:16px;width:26px;
+height:26px'><img width=26 height=26 src="Qemu-Bridge-Readme.files/image001.png"
+v:shapes="chast-1-sozdanie-konfiguratsionnykh-faylov"></span><![endif]><!--[if gte vml 1]><v:rect
+ id="chast-2-sozdaem-adapter-i-nastraivaem-mashrutizatsia" o:spid="_x0000_s1035"
+ style='position:absolute;margin-left:-19.5pt;margin-top:12pt;width:19.5pt;
+ height:19.5pt;z-index:251656192;visibility:visible;mso-wrap-style:none;
+ mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;
+ mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+ mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;
+ mso-position-horizontal-relative:text;mso-position-vertical:absolute;
+ mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
+ mso-width-relative:page;mso-height-relative:page;v-text-anchor:middle'
+ o:gfxdata="UEsDBBQABgAIAAAAIQC2gziS/gAAAOEBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRQU7DMBBF
+90jcwfIWJU67QAgl6YK0S0CoHGBkTxKLZGx5TGhvj5O2G0SRWNoz/78nu9wcxkFMGNg6quQqL6RA
+0s5Y6ir5vt9lD1JwBDIwOMJKHpHlpr69KfdHjyxSmriSfYz+USnWPY7AufNIadK6MEJMx9ApD/oD
+OlTrorhX2lFEilmcO2RdNtjC5xDF9pCuTyYBB5bi6bQ4syoJ3g9WQ0ymaiLzg5KdCXlKLjvcW893
+SUOqXwnz5DrgnHtJTxOsQfEKIT7DmDSUCaxw7Rqn8787ZsmRM9e2VmPeBN4uqYvTtW7jvijg9N/y
+JsXecLq0q+WD6m8AAAD//wMAUEsDBBQABgAIAAAAIQA4/SH/1gAAAJQBAAALAAAAX3JlbHMvLnJl
+bHOkkMFqwzAMhu+DvYPRfXGawxijTi+j0GvpHsDYimMaW0Yy2fr2M4PBMnrbUb/Q94l/f/hMi1qR
+JVI2sOt6UJgd+ZiDgffL8ekFlFSbvV0oo4EbChzGx4f9GRdb25HMsYhqlCwG5lrLq9biZkxWOiqY
+22YiTra2kYMu1l1tQD30/bPm3wwYN0x18gb45AdQl1tp5j/sFB2T0FQ7R0nTNEV3j6o9feQzro1i
+OWA14Fm+Q8a1a8+Bvu/d/dMb2JY5uiPbhG/ktn4cqGU/er3pcvwCAAD//wMAUEsDBBQABgAIAAAA
+IQAIflJWFwMAAHgGAAAOAAAAZHJzL2Uyb0RvYy54bWysVVtv0zAUfkfiP1h+z3Jp0jTR2qntWoQ0
+YNJAPLux01gkdmS7zTbEf+fYTrcWXhCQSpaPL5/P951Lr28euxYdmdJcijmOryKMmKgk5WI/x18+
+b4MZRtoQQUkrBZvjJ6bxzeLtm+uhL1kiG9lSphCACF0O/Rw3xvRlGOqqYR3RV7JnAjZrqTpiwFT7
+kCoyAHrXhkkUTcNBKtorWTGtYfXWb+KFw69rVplPda2ZQe0cg2/GjcqNOzuGi2tS7hXpG16NbpC/
+8KIjXMCjL1C3xBB0UPw3qI5XSmpZm6tKdqGsa14xxwHYxNEvbB4a0jPHBcTR/YtM+v/BVh+P9wpx
+CrEDeQTpIEZVQ7QJkkDLZ0pYFxBKesNUwAMBG4rwo12F8DTqYPgzBIYTK+TQ6xLwHvp7ZaXQ/Z2s
+vmkk5LohYs+WSsmhYYSC+7E9H15csIaGq2g3fJAU3CAHI52mj7XqLCCohR5d6J5eQsceDapgMUnz
+aQYMKtga5/YFUp4u90qbd0x2yE7mWEFmOHByvNPGHz0dcc7LltMtb1tnqP1u3Sp0JJBFW/f5u23f
+EL/qMgme0/6oe1qfY7TCIglpMf1zfoW5JPU+kBLowNSetMRcAn0v4iSNVkkRbKezPEi3aRYUeTQL
+orhYFdMoLdLb7Q/rT5yWDaeUiTsu2CmZ4/TPkmUsK5+GLp3RMMdFlmQgKoHKrFviFbugNfL1IkzS
+abZMXWhBiXP2Sh4EBdqktAmwGeeG8NbPw0vnnXygwKUQy20W5elkFuR5NgnSySYKVrPtOliu4+k0
+36zWq018KcTGiav/XQvnyClS1pAHqIiHhg6IcptPk6xIYgwG9JYkj+yHEWn30BQrozBS0nzlpnEV
+bZPXYlxoN4vsb9TuBd0L8frwmU4jt1epIPtO6eMqyxaTL8qdpE9QWOCDqx5o1zBppHrGaIDWN8cC
+ejNG7XsBpVnEaWo7pTPSLE/AUOc7u/MdIioAGkl6Y218fz30iu8beCl2bIVcQkHX3BWbLXbvFfhv
+DWhvjsnYim3/PLfdqdc/jMVPAAAA//8DAFBLAwQUAAYACAAAACEA38mXC9wAAAAGAQAADwAAAGRy
+cy9kb3ducmV2LnhtbEyPQU/DMAyF70j8h8hIXKYtZZsmKHUnVOAAN8rEOWtMW9E4VZN1pb8ec4KL
+rSc/vfc520+uUyMNofWMcLNKQBFX3rZcIxzen5e3oEI0bE3nmRC+KcA+v7zITGr9md9oLGOtJIRD
+ahCaGPtU61A15ExY+Z5Ybp9+cCaKHGptB3OWcNfpdZLstDMtS0Njeioaqr7Kk0N43T4+LYo4z3Nt
+K/9yGAv6WJSI11fTwz2oSFP8M8MvvqBDLkxHf2IbVIew3NzJLxFhvZUtBplHhN0mAZ1n+j9+/gMA
+AP//AwBQSwECLQAUAAYACAAAACEAtoM4kv4AAADhAQAAEwAAAAAAAAAAAAAAAAAAAAAAW0NvbnRl
+bnRfVHlwZXNdLnhtbFBLAQItABQABgAIAAAAIQA4/SH/1gAAAJQBAAALAAAAAAAAAAAAAAAAAC8B
+AABfcmVscy8ucmVsc1BLAQItABQABgAIAAAAIQAIflJWFwMAAHgGAAAOAAAAAAAAAAAAAAAAAC4C
+AABkcnMvZTJvRG9jLnhtbFBLAQItABQABgAIAAAAIQDfyZcL3AAAAAYBAAAPAAAAAAAAAAAAAAAA
+AHEFAABkcnMvZG93bnJldi54bWxQSwUGAAAAAAQABADzAAAAegYAAAAA
+" stroked="f" strokecolor="#3465a4">
+ <v:fill opacity="0"/>
+ <v:stroke joinstyle="round"/>
+</v:rect><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:251656192;margin-left:-26px;margin-top:16px;width:26px;
+height:26px'><img width=26 height=26 src="Qemu-Bridge-Readme.files/image001.png"
+v:shapes="chast-2-sozdaem-adapter-i-nastraivaem-mashrutizatsia"></span><![endif]><!--[if gte vml 1]><v:rect
+ id="chast-3-qemu" o:spid="_x0000_s1034" style='position:absolute;
+ margin-left:-19.5pt;margin-top:12pt;width:19.5pt;height:19.5pt;z-index:251658240;
+ visibility:visible;mso-wrap-style:none;mso-width-percent:0;
+ mso-height-percent:0;mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;
+ mso-wrap-distance-right:9pt;mso-wrap-distance-bottom:0;
+ mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+ mso-position-vertical:absolute;mso-position-vertical-relative:text;
+ mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+ mso-height-relative:page;v-text-anchor:middle' o:gfxdata="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
+AAAEAAQA8wAAAGAGAAAAAA==
+" stroked="f" strokecolor="#3465a4">
+ <v:fill opacity="0"/>
+ <v:stroke joinstyle="round"/>
+</v:rect><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:251658240;margin-left:-26px;margin-top:16px;width:26px;
+height:26px'><img width=26 height=26 src="Qemu-Bridge-Readme.files/image001.png"
+v:shapes="chast-3-qemu"></span><![endif]><!--[if gte vml 1]><v:rect id="chast-4-zavershenie-raboty-s-setevym-mostom"
+ o:spid="_x0000_s1033" style='position:absolute;margin-left:-19.5pt;
+ margin-top:12pt;width:19.5pt;height:19.5pt;z-index:251660288;visibility:visible;
+ mso-wrap-style:none;mso-width-percent:0;mso-height-percent:0;
+ mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+ mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;
+ mso-position-horizontal-relative:text;mso-position-vertical:absolute;
+ mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
+ mso-width-relative:page;mso-height-relative:page;v-text-anchor:middle'
+ o:gfxdata="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
+" stroked="f" strokecolor="#3465a4">
+ <v:fill opacity="0"/>
+ <v:stroke joinstyle="round"/>
+</v:rect><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:251660288;margin-left:-26px;margin-top:16px;width:26px;
+height:26px'><img width=26 height=26 src="Qemu-Bridge-Readme.files/image001.png"
+v:shapes="chast-4-zavershenie-raboty-s-setevym-mostom"></span><![endif]><!--[if gte vml 1]><v:rect
+ id="p-s" o:spid="_x0000_s1032" style='position:absolute;margin-left:-19.5pt;
+ margin-top:12pt;width:19.5pt;height:19.5pt;z-index:251662336;visibility:visible;
+ mso-wrap-style:none;mso-width-percent:0;mso-height-percent:0;
+ mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+ mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;
+ mso-position-horizontal-relative:text;mso-position-vertical:absolute;
+ mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
+ mso-width-relative:page;mso-height-relative:page;v-text-anchor:middle'
+ o:gfxdata="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
+AABYBgAAAAA=
+" stroked="f" strokecolor="#3465a4">
+ <v:fill opacity="0"/>
+ <v:stroke joinstyle="round"/>
+</v:rect><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:251662336;margin-left:-26px;margin-top:16px;width:26px;
+height:26px'><img width=26 height=26 src="Qemu-Bridge-Readme.files/image001.png"
+v:shapes="p-s"></span><![endif]><!--[if gte vml 1]><v:shapetype id="_x0000_t202"
+ coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+ <v:stroke joinstyle="miter"/>
+ <v:path gradientshapeok="t" o:connecttype="rect"/>
+</v:shapetype><v:shape id="Text_x0020_Box_x0020_3" o:spid="_x0000_s1031"
+ type="#_x0000_t202" style='position:absolute;margin-left:-19.5pt;margin-top:71.7pt;
+ width:19.5pt;height:19.5pt;z-index:251653120;visibility:visible;
+ mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;
+ mso-wrap-distance-left:0;mso-wrap-distance-top:5.7pt;
+ mso-wrap-distance-right:0;mso-wrap-distance-bottom:5.7pt;
+ mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+ mso-position-vertical:absolute;mso-position-vertical-relative:page;
+ mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+ mso-height-relative:page;v-text-anchor:top' o:gfxdata="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
+8wAAAOgFAAAAAA==
+" stroked="f">
+ <v:fill opacity="0"/>
+ <v:textbox inset="0,0,0,0">
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <p class=MsoBodyText><o:p>&nbsp;</o:p></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+ <w:wrap anchory="page"/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:251653120;margin-left:-26px;margin-top:95px;width:30px;
+height:31px'><img width=30 height=31 src="Qemu-Bridge-Readme.files/image002.png"
+v:shapes="Text_x0020_Box_x0020_3"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="Text_x0020_Box_x0020_5" o:spid="_x0000_s1030" type="#_x0000_t202" style='position:absolute;
+ margin-left:-19.5pt;margin-top:68.7pt;width:19.5pt;height:19.5pt;z-index:251655168;
+ visibility:visible;mso-wrap-style:square;mso-width-percent:0;
+ mso-height-percent:0;mso-wrap-distance-left:0;mso-wrap-distance-top:5.7pt;
+ mso-wrap-distance-right:0;mso-wrap-distance-bottom:5.7pt;
+ mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+ mso-position-vertical:absolute;mso-position-vertical-relative:page;
+ mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+ mso-height-relative:page;v-text-anchor:top' o:gfxdata="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
+AAQA8wAAAOsFAAAAAA==
+" stroked="f">
+ <v:fill opacity="0"/>
+ <v:textbox inset="0,0,0,0">
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <p class=MsoBodyText><o:p>&nbsp;</o:p></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+ <w:wrap anchory="page"/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:251655168;margin-left:-26px;margin-top:91px;width:30px;
+height:31px'><img width=30 height=31 src="Qemu-Bridge-Readme.files/image002.png"
+v:shapes="Text_x0020_Box_x0020_5"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="Text_x0020_Box_x0020_7" o:spid="_x0000_s1029" type="#_x0000_t202" style='position:absolute;
+ margin-left:-19.5pt;margin-top:68.7pt;width:19.5pt;height:19.5pt;z-index:251657216;
+ visibility:visible;mso-wrap-style:square;mso-width-percent:0;
+ mso-height-percent:0;mso-wrap-distance-left:0;mso-wrap-distance-top:5.7pt;
+ mso-wrap-distance-right:0;mso-wrap-distance-bottom:5.7pt;
+ mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+ mso-position-vertical:absolute;mso-position-vertical-relative:page;
+ mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+ mso-height-relative:page;v-text-anchor:top' o:gfxdata="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
+AAQA8wAAAOsFAAAAAA==
+" stroked="f">
+ <v:fill opacity="0"/>
+ <v:textbox inset="0,0,0,0">
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <p class=MsoBodyText><o:p>&nbsp;</o:p></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+ <w:wrap anchory="page"/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:251657216;margin-left:-26px;margin-top:91px;width:30px;
+height:31px'><img width=30 height=31 src="Qemu-Bridge-Readme.files/image002.png"
+v:shapes="Text_x0020_Box_x0020_7"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="Text_x0020_Box_x0020_9" o:spid="_x0000_s1028" type="#_x0000_t202" style='position:absolute;
+ margin-left:-19.5pt;margin-top:68.7pt;width:19.5pt;height:19.5pt;z-index:251659264;
+ visibility:visible;mso-wrap-style:square;mso-width-percent:0;
+ mso-height-percent:0;mso-wrap-distance-left:0;mso-wrap-distance-top:5.7pt;
+ mso-wrap-distance-right:0;mso-wrap-distance-bottom:5.7pt;
+ mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+ mso-position-vertical:absolute;mso-position-vertical-relative:page;
+ mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+ mso-height-relative:page;v-text-anchor:top' o:gfxdata="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
+AAQA8wAAAOsFAAAAAA==
+" stroked="f">
+ <v:fill opacity="0"/>
+ <v:textbox inset="0,0,0,0">
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <p class=MsoBodyText><o:p>&nbsp;</o:p></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+ <w:wrap anchory="page"/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:251659264;margin-left:-26px;margin-top:91px;width:30px;
+height:31px'><img width=30 height=31 src="Qemu-Bridge-Readme.files/image002.png"
+v:shapes="Text_x0020_Box_x0020_9"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="Text_x0020_Box_x0020_11" o:spid="_x0000_s1027" type="#_x0000_t202"
+ style='position:absolute;margin-left:-19.5pt;margin-top:68.7pt;width:19.5pt;
+ height:19.5pt;z-index:251661312;visibility:visible;mso-wrap-style:square;
+ mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:0;
+ mso-wrap-distance-top:5.7pt;mso-wrap-distance-right:0;
+ mso-wrap-distance-bottom:5.7pt;mso-position-horizontal:absolute;
+ mso-position-horizontal-relative:text;mso-position-vertical:absolute;
+ mso-position-vertical-relative:page;mso-width-percent:0;mso-height-percent:0;
+ mso-width-relative:page;mso-height-relative:page;v-text-anchor:top' o:gfxdata="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
+AAQABADzAAAA7QUAAAAA
+" stroked="f">
+ <v:fill opacity="0"/>
+ <v:textbox inset="0,0,0,0">
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <p class=MsoBodyText><o:p>&nbsp;</o:p></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+ <w:wrap anchory="page"/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:251661312;margin-left:-26px;margin-top:91px;width:30px;
+height:31px'><img width=30 height=31 src="Qemu-Bridge-Readme.files/image002.png"
+v:shapes="Text_x0020_Box_x0020_11"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="Text_x0020_Box_x0020_13" o:spid="_x0000_s1026" type="#_x0000_t202"
+ style='position:absolute;margin-left:-19.5pt;margin-top:68.7pt;width:19.5pt;
+ height:19.5pt;z-index:251663360;visibility:visible;mso-wrap-style:square;
+ mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:0;
+ mso-wrap-distance-top:5.7pt;mso-wrap-distance-right:0;
+ mso-wrap-distance-bottom:5.7pt;mso-position-horizontal:absolute;
+ mso-position-horizontal-relative:text;mso-position-vertical:absolute;
+ mso-position-vertical-relative:page;mso-width-percent:0;mso-height-percent:0;
+ mso-width-relative:page;mso-height-relative:page;v-text-anchor:top' o:gfxdata="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
+AAQABADzAAAA7QUAAAAA
+" stroked="f">
+ <v:fill opacity="0"/>
+ <v:textbox inset="0,0,0,0">
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <p class=MsoBodyText><o:p>&nbsp;</o:p></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+ <w:wrap anchory="page"/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:251663360;margin-left:-26px;margin-top:91px;width:30px;
+height:31px'><img width=30 height=31 src="Qemu-Bridge-Readme.files/image002.png"
+v:shapes="Text_x0020_Box_x0020_13"></span><![endif]></h1>
+
+<h3><span style='font-size:18.0pt;mso-bidi-font-size:14.0pt'>Часть 1. Создание
+конфигурационных файлов.</span></h3>
+
+<p class=MsoBodyText style='margin-top:9.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>Во
+первых необходимо включить маршрутизацию между интерфейсами.</span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><strong><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US'>$</span></strong><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'>&nbsp;<span
+class=SpellE><span class=GramE><em><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans";font-style:normal;mso-bidi-font-style:italic'>sudo</span></em></span></span><em><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";
+font-style:normal;mso-bidi-font-style:italic'> <span class=SpellE>sysctl</span>
+net.ipv4.ip_forward=1</span></em></span><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>Для
+постоянного включения маршрутизации создайте файл.</span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><strong><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US'>$</span></strong><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'>&nbsp;<span
+class=GramE><em><span style='font-family:"PT Serif","serif";mso-bidi-font-family:
+"DejaVu Sans";font-style:normal;mso-bidi-font-style:italic'>echo</span></em></span><em><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";
+font-style:normal;mso-bidi-font-style:italic'> &quot;net.ipv4.ip_forward =
+1&quot;&nbsp;</span></em><strong><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans"'>&gt;</span></strong><em><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";
+font-style:normal;mso-bidi-font-style:italic'>&nbsp;/<span class=SpellE>etc</span>/<span
+class=SpellE>sysctl.d</span>/99-sysctl.conf</span></em></span><span lang=EN-US
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>Теперь
+придумайте имя вашего будущего сетевого адаптера для режима&nbsp;<strong><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans"'>«Мост»</span></strong>.
+Пусть у меня будет&nbsp;<strong><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans"'>«br0»</span></strong>. Мы с вами будет
+пользоваться встроенными в систему средствами без каких-либо дополнительных
+утилит.</span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>С
+одной стороны — это слегка усложняет настройку, с другой стороны убирает
+необходимость устанавливать что-либо. Усложняет в том, смысле что, например,
+графический интерфейс&nbsp;<span class=SpellE><strong><span style='font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans"'>Network-Manager</span></strong></span>&nbsp;не
+поддерживает создание адаптера для режима мост, только консольные средства.</span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>Возможно
+для последнего я просто не нашел необходимых настроек, однако, вам всё равно
+также придётся искать. Команды же намного проще, чем кажутся. Ну да хватит
+демагогии, переходим к делу.</span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>Теперь
+необходимо создать файл&nbsp;<strong><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans"'>«/<span class=SpellE>etc</span>/<span
+class=SpellE>qemu</span>/<span class=SpellE>bridge.conf</span>»</span></strong>&nbsp;и
+записать в него одну строку с названием придуманного вами адаптера режима&nbsp;<strong><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans"'>«Мост»</span></strong>.
+Собственно говоря, адаптер может быть не один. Просто запишите на каждой строке
+свой адаптер.</span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><strong><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US'>$</span></strong><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'>&nbsp;<span
+class=SpellE><span class=GramE><em><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans";font-style:normal;mso-bidi-font-style:italic'>sudo</span></em></span></span><em><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";
+font-style:normal;mso-bidi-font-style:italic'> <span class=SpellE>mkdir</span>
+-p /<span class=SpellE>etc</span>/<span class=SpellE>qemu</span>/</span></em></span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><strong><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US'>$</span></strong><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'>&nbsp;<span
+class=SpellE><span class=GramE><em><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans";font-style:normal;mso-bidi-font-style:italic'>sudo</span></em></span></span><em><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";
+font-style:normal;mso-bidi-font-style:italic'> touch /<span class=SpellE>etc</span>/<span
+class=SpellE>qemu</span>/<span class=SpellE>bridge.conf</span></span></em></span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><strong><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US'>$</span></strong><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'>&nbsp;<span
+class=SpellE><span class=GramE><em><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans";font-style:normal;mso-bidi-font-style:italic'>sudo</span></em></span></span><em><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";
+font-style:normal;mso-bidi-font-style:italic'> <span class=SpellE>nano</span> /<span
+class=SpellE>etc</span>/<span class=SpellE>qemu</span>/<span class=SpellE>bridge.conf</span></span></em></span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span class=SpellE><span
+class=GramE><span style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:
+115%;font-family:"PT Serif","serif"'>allow</span></span></span><span
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif"'> br0</span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>Если
+вам сетевой мост необходим на постоянной основе, то стоит также сделать ручную
+настройку адресов данного адаптера,&nbsp;<strong><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans"'>но только после его создания</span></strong>.
+Однако, настройку всё равно приведу, чтобы не листать вверх-вниз.</span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><strong><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US'>$</span></strong><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'>&nbsp;<span
+class=SpellE><span class=GramE><em><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans";font-style:normal;mso-bidi-font-style:italic'>sudo</span></em></span></span><em><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";
+font-style:normal;mso-bidi-font-style:italic'> <span class=SpellE>nano</span> /<span
+class=SpellE>etc</span>/network/interfaces</span></em></span><span lang=EN-US
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span class=GramE><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-ansi-language:EN-US'>allow-<span class=SpellE>hotplug</span></span></span><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'> br0</span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span class=GramE><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-ansi-language:EN-US'>auto</span></span><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-ansi-language:EN-US'> br0</span><span lang=EN-US
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span class=SpellE><span
+class=GramE><span lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;
+line-height:115%;font-family:"PT Serif","serif";mso-ansi-language:EN-US'>iface</span></span></span><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'> br0 <span
+class=SpellE>inet</span> static</span><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span class=GramE><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-ansi-language:EN-US'>address</span></span><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'> 192.168.0.120</span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span class=SpellE><span
+class=GramE><span lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;
+line-height:115%;font-family:"PT Serif","serif";mso-ansi-language:EN-US'>netmask</span></span></span><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'> 255.255.255.0</span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span class=GramE><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-ansi-language:EN-US'>broadcast</span></span><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'> 192.168.0.255</span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span class=GramE><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-ansi-language:EN-US'>gateway</span></span><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'> 192.168.0.1</span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span class=SpellE><span
+class=GramE><span lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;
+line-height:115%;font-family:"PT Serif","serif";mso-ansi-language:EN-US'>dns-nameservers</span></span></span><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'> 192.168.0.1 8.8.8.8</span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span class=GramE><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-ansi-language:EN-US'>pre-up</span></span><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'> <span class=SpellE>ifconfig</span>
+br0 <span class=SpellE>hw</span> ether <span class=SpellE>xx:xx:xx:xx:xx:xx</span></span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>Последняя
+строка, которая изменяет МАК-адрес не обязательна. Широковещательный адрес
+рекомендую всё-таки указывать, хоть он и не обязателен. Шлюз указывать
+обязательно. А вот DNS сервер не обязателен.</span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>Однако,
+именно эту часть настроек вы можете внести уже графически через&nbsp;<strong><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans"'>«<span
+class=SpellE>Network-Manager</span>»</span></strong>, т.к. после создания
+адаптера вручную с указанием его типа он автоматически появляется в списках
+адаптеров для всех менеджеров сетей. Так что не обязательно делать всё вручную.
+Вручную можно сделать только часть настроек.</span></p>
+
+<h3><span style='font-size:18.0pt;mso-bidi-font-size:14.0pt'>Часть 2. Создаем
+адаптер и настраиваем. <span class=SpellE>Машрутизация</span>.</span></h3>
+
+<p class=MsoBodyText style='margin-top:9.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>Создаем
+адаптер с типом&nbsp;<strong><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans"'>«Мост»</span></strong>.</span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><strong><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US'>$&nbsp;</span></strong><span
+class=SpellE><span class=GramE><em><span lang=EN-US style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US;font-style:normal;
+mso-bidi-font-style:italic'>sudo</span></em></span></span><em><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US;
+font-style:normal;mso-bidi-font-style:italic'> <span class=SpellE>ip</span>
+link add name br0 type bridge</span></em><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>Включаем</span><span
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-ansi-language:EN-US'> </span><span style='font-size:
+14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>его</span><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'>.</span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><strong><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US'>$</span></strong><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'>&nbsp;<span
+class=SpellE><span class=GramE><em><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans";font-style:normal;mso-bidi-font-style:italic'>sudo</span></em></span></span><em><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";
+font-style:normal;mso-bidi-font-style:italic'> <span class=SpellE>ip</span>
+link set br0 up</span></em></span><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>Далее
+не обязательно вносить все настройки вручную, через терминал, т.к. после
+создания адаптера вручную с указанием его типа он автоматически появляется в
+списках адаптеров для всех менеджеров сетей.</span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>Указываем
+главный адаптер. У меня это&nbsp;<strong><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans"'>«enp3s0»</span></strong>, проводной
+адаптер. У вас может другой, например,&nbsp;<strong><span style='font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans"'>«eth0»</span></strong>,
+или&nbsp;<strong><span style='font-family:"PT Serif","serif";mso-bidi-font-family:
+"DejaVu Sans"'>«wlp4s0»</span></strong>&nbsp;беспроводной. Просто наберите в
+терминале команду&nbsp;<strong><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans"'>«</span></strong><span class=SpellE><em><b
+style='mso-bidi-font-weight:normal'><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans";font-style:normal;mso-bidi-font-style:italic'>ip</span></b></em></span><em><b
+style='mso-bidi-font-weight:normal'><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans";font-style:normal;mso-bidi-font-style:italic'>
+<span class=SpellE>link</span> <span class=SpellE>show</span></span></b></em><strong><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans"'>»</span></strong>,
+чтобы узнать названия всех ваших адаптеров и активных соединений (если
+отсутствует <span class=SpellE>ifconfig</span> — из <span class=SpellE>net-tools</span>
+утилиты). Если используете <span class=SpellE>WiFi</span> — то название должно
+начинаться с&nbsp;<strong><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans"'>«<span class=SpellE>wl</span>»</span></strong>,
+а у проводного с&nbsp;<strong><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans"'>«<span class=SpellE>en</span>»</span></strong>&nbsp;или
+с&nbsp;<strong><span style='font-family:"PT Serif","serif";mso-bidi-font-family:
+"DejaVu Sans"'>«<span class=SpellE>et</span>»</span></strong>.</span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><strong><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US'>$</span></strong><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'>&nbsp;<span
+class=SpellE><span class=GramE><em><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans";font-style:normal;mso-bidi-font-style:italic'>sudo</span></em></span></span><em><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";
+font-style:normal;mso-bidi-font-style:italic'> <span class=SpellE>ip</span>
+link set enp3s0 master br0</span></em></span><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>Подключаем
+сетевой мост.</span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><strong><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans"'>$</span></strong><span style='font-size:
+14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>&nbsp;<span
+class=SpellE><em><span style='font-family:"PT Serif","serif";mso-bidi-font-family:
+"DejaVu Sans";font-style:normal;mso-bidi-font-style:italic'>sudo</span></em></span><em><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";
+font-style:normal;mso-bidi-font-style:italic'> <span class=SpellE>bridge</span>
+<span class=SpellE>link</span></span></em></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>Теперь
+настраиваем адреса и не забываем про широковещательный адрес. Я для вычисления
+широковещательного адреса использую самый простой калькулятор — консольная
+утилита&nbsp;<strong><span style='font-family:"PT Serif","serif";mso-bidi-font-family:
+"DejaVu Sans"'>«<span class=SpellE>ipcalc</span>»</span></strong>.</span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><strong><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US'>$</span></strong><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'>&nbsp;<span
+class=SpellE><span class=GramE><em><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans";font-style:normal;mso-bidi-font-style:italic'>ipcalc</span></em></span></span><em><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";
+font-style:normal;mso-bidi-font-style:italic'> 192.168.0.120/24</span></em></span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><strong><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US'>$</span></strong><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'>&nbsp;<span
+class=SpellE><span class=GramE><em><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans";font-style:normal;mso-bidi-font-style:italic'>sudo</span></em></span></span><em><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";
+font-style:normal;mso-bidi-font-style:italic'> <span class=SpellE>ip</span> <span
+class=SpellE>addr</span> add 192.168.0.120/24 <span class=SpellE>dev</span> br0</span></em></span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><strong><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US'>$</span></strong><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'>&nbsp;<span
+class=SpellE><span class=GramE><em><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans";font-style:normal;mso-bidi-font-style:italic'>sudo</span></em></span></span><em><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";
+font-style:normal;mso-bidi-font-style:italic'> <span class=SpellE>ifconfig</span>
+br0 broadcast 192.168.0.255</span></em></span><span lang=EN-US
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><strong><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US'>$</span></strong><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'>&nbsp;<span
+class=SpellE><span class=GramE><em><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans";font-style:normal;mso-bidi-font-style:italic'>sudo</span></em></span></span><em><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";
+font-style:normal;mso-bidi-font-style:italic'> <span class=SpellE>ifconfig</span>
+br0 <span class=SpellE>mtu</span> 1000</span></em></span><span lang=EN-US
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>И
+самое главное маршрут для этого моста по умолчанию, иначе интернета в&nbsp;<span
+class=SpellE><strong><span style='font-family:"PT Serif","serif";mso-bidi-font-family:
+"DejaVu Sans"'>Qemu</span></strong></span>&nbsp;не будет. Кстати, эту команду
+прям непосредственно можно вставить в ручные настройки адресов&nbsp;<strong><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans"'>«/<span
+class=SpellE>etc</span>/<span class=SpellE>network</span>/<span class=SpellE>interfaces</span>»</span></strong>,
+разумеется без&nbsp;<strong><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans"'>«<span class=SpellE>sudo</span>»</span></strong>.</span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><strong><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US'>$</span></strong><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'>&nbsp;<span
+class=SpellE><span class=GramE><em><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans";font-style:normal;mso-bidi-font-style:italic'>sudo</span></em></span></span><em><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";
+font-style:normal;mso-bidi-font-style:italic'> <span class=SpellE>ip</span>
+route add 192.168.0.120 via 192.168.0.1</span></em></span><span lang=EN-US
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>И не
+забудьте указать шлюз по умолчанию, а то интернет на основном адаптере
+пропадет.</span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><strong><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US'>$</span></strong><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'>&nbsp;<span
+class=SpellE><span class=GramE>s<em><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans";font-style:normal;mso-bidi-font-style:italic'>udo</span></em></span></span><em><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";
+font-style:normal;mso-bidi-font-style:italic'> route add default <span
+class=SpellE>gw</span> 192.168.0.1 br0</span></em></span><span lang=EN-US
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>Для
+просмотра маршрутов по умолчанию:</span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><strong><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans"'>$</span></strong><span style='font-size:
+14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>&nbsp;<span
+class=SpellE><em><span style='font-family:"PT Serif","serif";mso-bidi-font-family:
+"DejaVu Sans";font-style:normal;mso-bidi-font-style:italic'>ip</span></em></span><em><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";
+font-style:normal;mso-bidi-font-style:italic'> <span class=SpellE>route</span></span></em></span></p>
+
+<h3><span style='font-size:18.0pt;mso-bidi-font-size:14.0pt'>Часть 3. QEMU</span></h3>
+
+<p class=MsoBodyText style='margin-top:9.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>Адаптер
+сетевого моста указывается так:</span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif";
+mso-ansi-language:EN-US'>-<span class=SpellE>netdev</span> <span class=SpellE>bridge<span
+class=GramE>,br</span></span>=br0,id=net0 \</span><span lang=EN-US
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif";
+mso-ansi-language:EN-US'>-device <span class=SpellE>virtio</span>-net-<span
+class=SpellE>pci<span class=GramE>,netdev</span></span>=net0</span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>Чтобы
+меньше заморачиваться я для себя просто создал скрипт рядом с необходимым
+образом системы. И в этот скрипт вношу все необходимые команды. Некоторые
+записываю в комментарий, чтобы не забыть — просто для удобства, чтобы ничего не
+искать.</span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>Базовый
+файл запуска виртуальной машины, например, <span class=SpellE>Archlinux</span>
+выглядит так —&nbsp;<strong><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans"'>«qemu.sh»</span></strong>:</span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span class=GramE><em><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:
+EN-US;font-style:normal;mso-bidi-font-style:italic'>#!/</span></em></span><span
+class=SpellE><em><span lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:
+12.0pt;line-height:115%;font-family:"PT Serif","serif";mso-bidi-font-family:
+"DejaVu Sans";mso-ansi-language:EN-US;font-style:normal;mso-bidi-font-style:
+italic'>usr</span></em></span><em><span lang=EN-US style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US;font-style:normal;
+mso-bidi-font-style:italic'>/bin/<span class=SpellE>env</span> bash</span></em><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span class=GramE><em><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:
+EN-US;font-style:normal;mso-bidi-font-style:italic'>qemu-system-x86_64</span></em></span><em><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:
+EN-US;font-style:normal;mso-bidi-font-style:italic'> \</span></em><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><em><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US;
+font-style:normal;mso-bidi-font-style:italic'>-<span class=GramE>enable-</span><span
+class=SpellE>kvm</span> \</span></em><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><em><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US;
+font-style:normal;mso-bidi-font-style:italic'>-<span class=SpellE><span
+class=GramE>cpu</span></span> host \</span></em><span lang=EN-US
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><em><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US;
+font-style:normal;mso-bidi-font-style:italic'>-<span class=SpellE>smp</span>
+cores=1 \</span></em><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><em><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US;
+font-style:normal;mso-bidi-font-style:italic'>-m 1024 \</span></em><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><em><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US;
+font-style:normal;mso-bidi-font-style:italic'>-machine q35 \</span></em><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><em><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US;
+font-style:normal;mso-bidi-font-style:italic'>-device <span class=SpellE>intel-iommu</span>
+\</span></em><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><em><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US;
+font-style:normal;mso-bidi-font-style:italic'>-<span class=SpellE>vga</span> <span
+class=SpellE>virtio</span> \</span></em><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><em><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US;
+font-style:normal;mso-bidi-font-style:italic'>-<span class=SpellE>netdev</span>
+<span class=SpellE>bridge<span class=GramE>,br</span></span>=br0,id=net0 \</span></em><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><em><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US;
+font-style:normal;mso-bidi-font-style:italic'>-device <span class=SpellE>virtio</span>-net-<span
+class=SpellE>pci<span class=GramE>,netdev</span></span>=net0 \</span></em><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><em><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US;
+font-style:normal;mso-bidi-font-style:italic'>-boot menu=on \</span></em><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><em><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US;
+font-style:normal;mso-bidi-font-style:italic'>-<span class=SpellE>cdrom</span>
+archlinux-2021.11.01-x86_64.iso \</span></em><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><em><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans";font-style:normal;mso-bidi-font-style:italic'>-<span
+class=SpellE>hda</span> <span class=SpellE>arch.qcow</span></span></em></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>А
+далее меняйте в этом скрипте необходимые параметры по своему усмотрению.</span></p>
+
+<h3><span style='font-size:18.0pt;mso-bidi-font-size:14.0pt'>Часть 4.
+Завершение работы с сетевым мостом.</span></h3>
+
+<p class=MsoBodyText style='margin-top:9.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>По
+окончании работы с сетевым мостом необходимо его правильно удалить из системы.</span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>Если
+сетевой мост в QEMU больше не нужен, то смело удаляйте конфигурацию.</span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><strong><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US'>$</span></strong><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'>&nbsp;<span
+class=SpellE><span class=GramE><em><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans";font-style:normal;mso-bidi-font-style:italic'>sudo</span></em></span></span><em><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";
+font-style:normal;mso-bidi-font-style:italic'> <span class=SpellE>rm</span> -<span
+class=SpellE>rf</span> /<span class=SpellE>etc</span>/<span class=SpellE>qemu</span>/<span
+class=SpellE>bridge.conf</span></span></em></span><span lang=EN-US
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>Отсоединяем
+основной адаптер от сетевого моста.</span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><strong><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US'>$</span></strong><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'>&nbsp;<span
+class=SpellE><span class=GramE><em><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans";font-style:normal;mso-bidi-font-style:italic'>sudo</span></em></span></span><em><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";
+font-style:normal;mso-bidi-font-style:italic'> <span class=SpellE>ip</span>
+link set enp3s0 <span class=SpellE>nomaster</span></span></em></span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>Отключаем</span><span
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-ansi-language:EN-US'> </span><span style='font-size:
+14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>сетевой</span><span
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-ansi-language:EN-US'> </span><span style='font-size:
+14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>мост</span><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'>.</span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><strong><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US'>$</span></strong><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'>&nbsp;<span
+class=SpellE><span class=GramE><em><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans";font-style:normal;mso-bidi-font-style:italic'>sudo</span></em></span></span><em><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";
+font-style:normal;mso-bidi-font-style:italic'> <span class=SpellE>ip</span>
+link set br0 down</span></em></span><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>На
+всякий случай очищаем маршруты, если таковые остались. Обычно&nbsp;<strong><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans"'>«<span
+class=SpellE>Network-Manager</span>»</span></strong>&nbsp;делает всё за нас в
+автоматическом режиме. При проблемах — команды ниже.</span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><strong><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans"'>$</span></strong><span style='font-size:
+14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>&nbsp;<span
+class=SpellE><em><span style='font-family:"PT Serif","serif";mso-bidi-font-family:
+"DejaVu Sans";font-style:normal;mso-bidi-font-style:italic'>sudo</span></em></span><em><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";
+font-style:normal;mso-bidi-font-style:italic'> <span class=SpellE>route</span> <span
+class=SpellE>del</span> <span class=SpellE>default</span> <span class=SpellE>gw</span>
+192.168.0.1 br0</span></em></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><strong><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans"'>$</span></strong><span style='font-size:
+14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>&nbsp;<span
+class=SpellE><em><span style='font-family:"PT Serif","serif";mso-bidi-font-family:
+"DejaVu Sans";font-style:normal;mso-bidi-font-style:italic'>sudo</span></em></span><em><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";
+font-style:normal;mso-bidi-font-style:italic'> <span class=SpellE>ip</span> <span
+class=SpellE>route</span> <span class=SpellE>del</span> 192.168.0.120 <span
+class=SpellE>via</span> 192.168.0.1</span></em></span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>И
+только после этого, можем его безвредно удалить.</span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><strong><span lang=EN-US
+style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";mso-ansi-language:EN-US'>$</span></strong><span
+lang=EN-US style='font-size:14.5pt;mso-bidi-font-size:12.0pt;line-height:115%;
+font-family:"PT Serif","serif";mso-ansi-language:EN-US'>&nbsp;<span
+class=SpellE><span class=GramE><em><span style='font-family:"PT Serif","serif";
+mso-bidi-font-family:"DejaVu Sans";font-style:normal;mso-bidi-font-style:italic'>sudo</span></em></span></span><em><span
+style='font-family:"PT Serif","serif";mso-bidi-font-family:"DejaVu Sans";
+font-style:normal;mso-bidi-font-style:italic'> <span class=SpellE>ip</span>
+link delete br0 type bridge</span></em></span><span lang=EN-US
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<h3><span style='font-size:18.0pt;mso-bidi-font-size:14.0pt'>P.S.:</span></h3>
+
+<p class=MsoBodyText style='margin-top:9.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>Тест
+всех соединений в приложенных скриншотах.</span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>Ну а
+сегодня на этом всё. Надеюсь я хоть немного вас заинтересовал.</span></p>
+
+<p class=MsoBodyText style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span style='font-size:14.5pt;
+mso-bidi-font-size:12.0pt;line-height:115%;font-family:"PT Serif","serif"'>Спасибо
+за внимание. Всем Удачи, до новых встреч, Пока-Пока!</span></p>
+
+<p class=MsoNormal><span style='font-family:"Times Newer Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Times Newer Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Times Newer Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Times Newer Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Times Newer Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText><span class=a><span lang=EN-US style='font-family:"Menlo","serif";
+color:#111111;background:#FAFAFA;mso-ansi-language:EN-US'>/<span class=SpellE>etc</span>/<span
+class=SpellE>systemd</span>/network/50-dummy0.netdev</span></span><span
+lang=EN-US style='font-family:"apple-system","serif";color:#111111;mso-ansi-language:
+EN-US'>:</span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<div style='mso-element:para-border-div;border:solid #E5E8EC 1.0pt;border-right:
+none black 1.0pt;mso-border-alt:solid #E5E8EC .25pt;mso-border-right-alt:none black 0cm;
+padding:13.0pt 0cm 13.0pt 15.0pt;background:#FBFDFF'>
+
+<p class=a1 style='line-height:160%;background:#FBFDFF;border:none;mso-border-alt:
+solid #E5E8EC .25pt;mso-border-right-alt:none black 0cm;padding:0cm;mso-padding-alt:
+13.0pt 0cm 13.0pt 15.0pt'><span class=a><span lang=EN-US style='font-family:
+"Menlo","serif";color:#4D4D4C;mso-ansi-language:EN-US'>[<span class=SpellE>NetDev</span>]</span></span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=a1 style='line-height:160%;background:#FBFDFF;border:none;mso-border-alt:
+solid #E5E8EC .25pt;mso-border-right-alt:none black 0cm;padding:0cm;mso-padding-alt:
+13.0pt 0cm 13.0pt 15.0pt'><span class=a><span lang=EN-US style='font-family:
+"Menlo","serif";color:#4D4D4C;mso-ansi-language:EN-US'>Name=dummy0</span></span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=a1 style='line-height:160%;background:#FBFDFF;border:none;mso-border-alt:
+solid #E5E8EC .25pt;mso-border-right-alt:none black 0cm;padding:0cm;mso-padding-alt:
+13.0pt 0cm 13.0pt 15.0pt'><span class=a><span lang=EN-US style='font-family:
+"Menlo","serif";color:#4D4D4C;mso-ansi-language:EN-US'>Kind=dummy</span></span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=a1 style='line-height:160%;background:#FBFDFF;border:none;mso-border-alt:
+solid #E5E8EC .25pt;mso-border-right-alt:none black 0cm;padding:0cm;mso-padding-alt:
+13.0pt 0cm 13.0pt 15.0pt'><span class=a><span lang=EN-US style='font-family:
+"Menlo","serif";color:#4D4D4C;mso-ansi-language:EN-US'>Description=Dummy
+network for <span class=SpellE>dnscrypt</span>-proxy</span></span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+</div>
+
+<p class=MsoBodyText><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+class=a><span lang=EN-US style='font-family:"Menlo","serif";color:#111111;
+background:#FAFAFA;mso-ansi-language:EN-US'>/<span class=SpellE>etc</span>/<span
+class=SpellE>systemd</span>/network/50-dummy0.network</span></span><span
+lang=EN-US style='font-family:"apple-system","serif";color:#111111;mso-ansi-language:
+EN-US'>:</span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<div style='mso-element:para-border-div;border:solid #E5E8EC 1.0pt;border-right:
+none black 1.0pt;mso-border-alt:solid #E5E8EC .25pt;mso-border-right-alt:none black 0cm;
+padding:13.0pt 0cm 13.0pt 15.0pt;background:#FBFDFF'>
+
+<p class=a1 style='line-height:160%;background:#FBFDFF;border:none;mso-border-alt:
+solid #E5E8EC .25pt;mso-border-right-alt:none black 0cm;padding:0cm;mso-padding-alt:
+13.0pt 0cm 13.0pt 15.0pt'><span class=a><span lang=EN-US style='font-family:
+"Menlo","serif";color:#4D4D4C;mso-ansi-language:EN-US'>[Match]</span></span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=a1 style='line-height:160%;background:#FBFDFF;border:none;mso-border-alt:
+solid #E5E8EC .25pt;mso-border-right-alt:none black 0cm;padding:0cm;mso-padding-alt:
+13.0pt 0cm 13.0pt 15.0pt'><span class=a><span lang=EN-US style='font-family:
+"Menlo","serif";color:#4D4D4C;mso-ansi-language:EN-US'>Name=dummy0</span></span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=a1 style='line-height:160%;background:#FBFDFF;border:none;mso-border-alt:
+solid #E5E8EC .25pt;mso-border-right-alt:none black 0cm;padding:0cm;mso-padding-alt:
+13.0pt 0cm 13.0pt 15.0pt'><span lang=EN-US style='font-size:12.0pt;line-height:
+160%;font-family:"Times Newer Roman","serif";mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=a1 style='line-height:160%;background:#FBFDFF;border:none;mso-border-alt:
+solid #E5E8EC .25pt;mso-border-right-alt:none black 0cm;padding:0cm;mso-padding-alt:
+13.0pt 0cm 13.0pt 15.0pt'><span class=a><span lang=EN-US style='font-family:
+"Menlo","serif";color:#4D4D4C;mso-ansi-language:EN-US'>[Network]</span></span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=a1 style='line-height:160%;background:#FBFDFF;border:none;mso-border-alt:
+solid #E5E8EC .25pt;mso-border-right-alt:none black 0cm;padding:0cm;mso-padding-alt:
+13.0pt 0cm 13.0pt 15.0pt'><span class=a><span lang=EN-US style='font-family:
+"Menlo","serif";color:#4D4D4C;mso-ansi-language:EN-US'>DHCP=no</span></span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=a1 style='line-height:160%;background:#FBFDFF;border:none;mso-border-alt:
+solid #E5E8EC .25pt;mso-border-right-alt:none black 0cm;padding:0cm;mso-padding-alt:
+13.0pt 0cm 13.0pt 15.0pt'><span class=a><span lang=EN-US style='font-family:
+"Menlo","serif";color:#4D4D4C;mso-ansi-language:EN-US'>Address=10.0.197.1/24</span></span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=a1 style='line-height:160%;background:#FBFDFF;border:none;mso-border-alt:
+solid #E5E8EC .25pt;mso-border-right-alt:none black 0cm;padding:0cm;mso-padding-alt:
+13.0pt 0cm 13.0pt 15.0pt'><span class=SpellE><span class=a><span lang=EN-US
+style='font-family:"Menlo","serif";color:#4D4D4C;mso-ansi-language:EN-US'>DefaultRouteOnDevice</span></span></span><span
+class=a><span lang=EN-US style='font-family:"Menlo","serif";color:#4D4D4C;
+mso-ansi-language:EN-US'>=false</span></span><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+</div>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times Newer Roman","serif";mso-ansi-language:
+EN-US'>Bridge-<span class=SpellE>Utils</span>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'>$ <span class=SpellE><span class=GramE>sudo</span></span>
+<span class=SpellE>pacman</span> -S bridge-<span class=SpellE>utils</span> --<span
+class=SpellE>noconfirm</span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'># <span class=GramE>echo</span> 'deb
+http://ftp.de.debian.org/debian <span class=SpellE>sid</span> main' &gt; /<span
+class=SpellE>etc</span>/apt/<span class=SpellE>sources.list.d</span>/<span
+class=SpellE>ftp.de.debian.org.list</span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'>$ <span class=SpellE><span class=GramE>sudo</span></span>
+apt install bridge-<span class=SpellE>utils</span> –y<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'>With bridge-<span class=SpellE>utils</span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'>Create a new bridge:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'># <span class=SpellE><span class=GramE>brctl</span></span>
+<span class=SpellE>addbr</span> <span class=SpellE>bridge_name</span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'>Add a device to a bridge, for example eth0:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'># <span class=SpellE><span class=GramE>brctl</span></span>
+<span class=SpellE>addif</span> <span class=SpellE>bridge_name</span> eth0<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'>Show current bridges and what interfaces they <span
+class=GramE>are connected</span> to:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'>$ <span class=SpellE><span class=GramE>brctl</span></span>
+show<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'>Set the bridge device up:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'># <span class=SpellE><span class=GramE>ip</span></span>
+link set <span class=SpellE>dev</span> <span class=SpellE>bridge_name</span> up<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'>Delete a <span class=GramE>bridge,</span> you need to
+first set it to down:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'># <span class=SpellE><span class=GramE>ip</span></span>
+link set <span class=SpellE>dev</span> <span class=SpellE>bridge_name</span>
+down<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'># <span class=SpellE><span class=GramE>brctl</span></span>
+<span class=SpellE>delbr</span> <span class=SpellE>bridge_name</span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'># <span class=SpellE><span class=GramE>modprobe</span></span>
+<span class=SpellE>br_netfilter</span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'>Configuring bridging in /<span class=SpellE>etc</span>/network/interfaces<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'> </span># Bridge setup<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'> </span><span
+class=SpellE><span class=GramE>iface</span></span> br0 <span class=SpellE>inet</span>
+static<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE>bridge_ports</span> eth0 eth1<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=GramE>address</span> 192.168.1.2<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=GramE>broadcast</span> 192.168.1.255<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>netmask</span></span> 255.255.255.0<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=GramE>gateway</span> 192.168.1.1<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE>bridge_ports</span> eth1<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>bridge_stp</span></span> off<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE>bridge_fd</span> 0<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE>bridge_maxwait</span> 0<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><span class=GramE><span lang=EN-US
+style='font-family:"Times Newer Roman","serif";mso-ansi-language:EN-US'>bridge_stp</span></span></span><span
+lang=EN-US style='font-family:"Times Newer Roman","serif";mso-ansi-language:
+EN-US'> off<span style='mso-spacerun:yes'>       </span># disable Spanning Tree
+Protocol<o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><span class=GramE><span lang=EN-US
+style='font-family:"Times Newer Roman","serif";mso-ansi-language:EN-US'>bridge_waitport</span></span></span><span
+lang=EN-US style='font-family:"Times Newer Roman","serif";mso-ansi-language:
+EN-US'> 0<span style='mso-spacerun:yes'>  </span><span
+style='mso-spacerun:yes'>  </span># no delay before a port becomes available<o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><span class=GramE><span lang=EN-US
+style='font-family:"Times Newer Roman","serif";mso-ansi-language:EN-US'>bridge_fd</span></span></span><span
+lang=EN-US style='font-family:"Times Newer Roman","serif";mso-ansi-language:
+EN-US'> 0<span style='mso-spacerun:yes'>          </span># no forwarding delay<o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><span class=GramE><span lang=EN-US
+style='font-family:"Times Newer Roman","serif";mso-ansi-language:EN-US'>bridge_ports</span></span></span><span
+lang=EN-US style='font-family:"Times Newer Roman","serif";mso-ansi-language:
+EN-US'> none<span style='mso-spacerun:yes'>    </span># if you do not want to
+bind to any ports<o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><span class=GramE><span lang=EN-US
+style='font-family:"Times Newer Roman","serif";mso-ansi-language:EN-US'>bridge_ports</span></span></span><span
+lang=EN-US style='font-family:"Times Newer Roman","serif";mso-ansi-language:
+EN-US'> regex eth* # use a regular expression to define ports<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span class=GramE><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'>auto</span></span><span lang=EN-US style='font-family:
+"Times Newer Roman","serif";mso-ansi-language:EN-US'> br0<o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><span class=GramE><span lang=EN-US
+style='font-family:"Times Newer Roman","serif";mso-ansi-language:EN-US'>iface</span></span></span><span
+lang=EN-US style='font-family:"Times Newer Roman","serif";mso-ansi-language:
+EN-US'> br0 <span class=SpellE>inet</span> static<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>        </span><span
+class=GramE>address</span> 10.18.44.26<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>        </span><span
+class=SpellE><span class=GramE>netmask</span></span> 255.255.255.192<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>        </span><span
+class=GramE>broadcast</span> 10.18.44.63<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>        </span><span
+class=SpellE><span class=GramE>dns-nameservers</span></span> 10.0.80.11
+10.0.80.12<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>        </span># set
+static route for LAN<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>        </span><span
+class=GramE>post-up</span> route add -net 10.0.0.0 <span class=SpellE>netmask</span>
+255.0.0.0 <span class=SpellE>gw</span> 10.18.44.1<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>        </span><span
+class=GramE>post-up</span> route add -net 161.26.0.0 <span class=SpellE>netmask</span>
+255.255.0.0 <span class=SpellE>gw</span> 10.18.44.1<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>        </span><span
+class=SpellE>bridge_ports</span> eth0<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>        </span><span
+class=SpellE><span class=GramE>bridge_stp</span></span> off<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>        </span><span
+class=SpellE>bridge_fd</span> 0<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>        </span><span
+class=SpellE>bridge_maxwait</span> 0<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Times Newer Roman","serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

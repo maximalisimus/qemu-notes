@@ -14,5 +14,13 @@ qemu -hda centos-cleaninstall.img -snapshot
 
 
 
+qemu-img snapshot -c snap-name disk-name
+
+инфа по снимкам диска, говорит что VM SIZE = 0. Хотя если сделать (сделать из снимка отдельный файл образ диска)
+
+qemu-img convert -f qcow2 -O qcow2 -s snap-sname disk.img disk-from-snap.img
+
+то его размер = размеру файлов на диске, а после его подключения, все файлы будут доступны.
+
 
 
