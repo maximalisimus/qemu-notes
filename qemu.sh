@@ -22,7 +22,10 @@ qemu-system-x86_64 \
 #-L . \
 #-drive file=/usr/share/ovmf/x64/OVMF_CODE.fd,if=pflash,format=raw,unit=0,readonly=on \
 # -cpu host \
-#
+
+# Windows 
+# -hda \\.\PhysicalDrive1
+
 # -device e1000,netdev=wan \
 # -netdev user,id=wan,hostfwd=tcp::2222-:22,hostfwd=tcp::8080-:80,hostfwd=tcp::4443-:443 \
 
