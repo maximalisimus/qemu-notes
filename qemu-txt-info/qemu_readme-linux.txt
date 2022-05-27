@@ -20,6 +20,8 @@ qemu-system-x86_64
 -hda ubuntu.qcow
 -hda \\.\PhysicalDrive1
 -drive format=raw,file=raw.img
+-drive format=vmdk,file=disk.vmdk
+-drive format=vhdx,file=disk.vhdx
 -drive format=vpc,file=image_vhd.vhd
 -drive format=vdi,file=image_vdi.vdi
 -usb --device usb-host,vendorid=0x125f,productid=0xdb8a
