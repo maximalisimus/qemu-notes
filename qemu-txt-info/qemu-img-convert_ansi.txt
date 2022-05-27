@@ -3,4 +3,6 @@ qemu-img convert -p -f vdi -O vhdx -o subformat=dynamic /home/user/win_7.vdi /ho
 
 qemu-img convert -p -f vdi -O vpc -o subformat=dynamic D:\Temp\arch.vdi D:\Temp\arch.vhd
 
+# -o subformat=monolithicFlat
+# -o subformat=dynamic
 
