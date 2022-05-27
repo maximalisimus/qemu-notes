@@ -1,7 +1,7 @@
 
 
 qemu-img create -f qcow2 test.qcow 30G
-# -o subformat=monolithicFlat
+# -o subformat=fixed
 # -o subformat=dynamic
 
 lsusb
