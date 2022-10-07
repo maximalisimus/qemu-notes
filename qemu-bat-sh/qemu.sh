@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# qemu-img create -f qcow2 arch.qcow 30G
-#
-# cp arch.qcow arch-snapshot.qcow
+# qemu-img create -f qcow2 test.qcow 30G
+# -o subformat=fixed
+# -o subformat=dynamic
 
 qemu-system-x86_64 \
 -enable-kvm \
@@ -15,13 +15,25 @@ qemu-system-x86_64 \
 -device e1000,netdev=wan \
 -netdev user,id=wan \
 -boot menu=on \
--cdrom archlinux-2021.11.01-x86_64.iso \
--hda arch.qcow \
--drive format=raw,file=hard.img
 # -snapshot \
+
 #-L . \
 #-drive file=/usr/share/ovmf/x64/OVMF_CODE.fd,if=pflash,format=raw,unit=0,readonly=on \
 # -cpu host \
+# или
+#-drive file=OVMF_CODE.fd,if=pflash,format=raw,unit=0,readonly=on
+
+#-hda hard.qcow
+
+#-hda /dev/sdX
+#-hda ubuntu.qcow
+#-drive format=raw,file=raw.img
+#-drive format=vmdk,file=disk.vmdk
+#-drive format=vhdx,file=disk.vhdx
+#-drive format=vpc,file=image_vhd.vhd
+#-drive format=vdi,file=image_vdi.vdi
+
+# -usb --device usb-host,vendorid=0x125f,productid=0xdb8a
 
 # Windows 
 # -hda \\.\PhysicalDrive1
