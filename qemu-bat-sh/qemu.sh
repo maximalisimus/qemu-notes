@@ -193,6 +193,7 @@ qemu-system-x86_64 \
 #
 # Example:
 # qemu-img create -f vpc -o size=4G ./image_vhd.vhd
+# sudo modprobe nbd
 # sudo qemu-nbd -c /dev/nbd0 ./image_vhd.vhd
 # parted -s /dev/nbd0 mklabel msdos
 # parted -s /dev/nbd0 mkpart primary ntfs 1MB 2561MB
@@ -210,6 +211,7 @@ qemu-system-x86_64 \
 # sudo mount -t auto -o,rw,gid=985,uid=1000 /dev/nbd0p1 ./disk
 # sudo umount -l ./disk
 # sudo qemu-nbd -d /dev/nbd0
+# sudo modprobe -r nbd
 #
 
 
